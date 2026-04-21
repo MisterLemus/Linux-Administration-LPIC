@@ -1,6 +1,6 @@
 #!/bin/bash
 # Linux User Management Script
-# Author: José Carol Lemus Reyes | LPIC-1
+# Author: José  Lemus  | LPIC-1
 
 RED='\033[0;31m'; GREEN='\033[0;32m'; YELLOW='\033[1;33m'; NC='\033[0m'
 
