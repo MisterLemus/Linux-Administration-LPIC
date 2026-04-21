@@ -1,0 +1,45 @@
+# Hardened SSH Configuration
+# Author: José Carol Lemus Reyes | LPIC-3
+# Based on CIS Benchmark recommendations
+
+Port 22
+Protocol 2
+AddressFamily inet
+
+# Authentication
+PermitRootLogin no
+MaxAuthTries 3
+MaxSessions 5
+PubkeyAuthentication yes
+PasswordAuthentication no
+PermitEmptyPasswords no
+ChallengeResponseAuthentication no
+
+# Security
+X11Forwarding no
+AllowTcpForwarding no
+AllowAgentForwarding no
+PermitTunnel no
+GatewayPorts no
+PrintMotd no
+
+# Timeout
+ClientAliveInterval 300
+ClientAliveCountMax 2
+LoginGraceTime 60
+
+# Logging
+SyslogFacility AUTH
+LogLevel VERBOSE
+
+# Restrict users
+AllowGroups ssh-users admins
+DenyUsers root guest
+
+# Ciphers (strong only)
+Ciphers aes256-gcm@openssh.com,aes128-gcm@openssh.com,aes256-ctr
+MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com
+KexAlgorithms curve25519-sha256,diffie-hellman-group16-sha512
+
+# Banner
+Banner /etc/ssh/banner
