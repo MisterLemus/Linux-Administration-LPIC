@@ -79,4 +79,4 @@
 | Virtualization | KVM, libvirt, containers, Docker |
 
 ## 📝 Author
-**José Carol Lemus Reyes** | LPIC-1/2/3 Certified
+**José  Lemus ** | LPIC-1/2/3 Certified
