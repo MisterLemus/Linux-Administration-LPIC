@@ -1,5 +1,5 @@
 # Hardened SSH Configuration
-# Author: José Carol Lemus Reyes | LPIC-3
+# Author: José  Lemus  | LPIC-3
 # Based on CIS Benchmark recommendations
 
 Port 22
